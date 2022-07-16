@@ -1,0 +1,252 @@
+Non_vulnerable counts up to 41435.
+CWE-476 counts up to 9164.
+train set info: 
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 40479 entries, 0 to 40478
+Data columns (total 2 columns):
+ #   Column  Non-Null Count  Dtype 
+---  ------  --------------  ----- 
+ 0   input   40479 non-null  object
+ 1   target  40479 non-null  object
+dtypes: object(2)
+memory usage: 3.7 MB
+======================split line=========================
+val set info: 
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 5061 entries, 0 to 5060
+Data columns (total 2 columns):
+ #   Column  Non-Null Count  Dtype 
+---  ------  --------------  ----- 
+ 0   input   5061 non-null   object
+ 1   target  5061 non-null   object
+dtypes: object(2)
+memory usage: 474.6 KB
+======================split line=========================
+test set info: 
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 5059 entries, 0 to 5058
+Data columns (total 2 columns):
+ #   Column  Non-Null Count  Dtype 
+---  ------  --------------  ----- 
+ 0   input   5059 non-null   object
+ 1   target  5059 non-null   object
+dtypes: object(2)
+memory usage: 474.4 KB
+======================split line=========================
+Ablation CWE-476  
+Epoch 1   train set at epoch 1 Mean loss each batch: 14.5715, Acc: 0.6436; - validate set at epoch 1 Mean loss each batch: 9.4498, Acc: 0.6809;  Time: 114.350745677948
+Ablation CWE-476  
+Epoch 2   train set at epoch 2 Mean loss each batch: 7.2111, Acc: 0.6882; - validate set at epoch 2 Mean loss each batch: 5.8924, Acc: 0.6979;  Time: 228.03227853775024
+Ablation CWE-476  
+Epoch 3   train set at epoch 3 Mean loss each batch: 4.3774, Acc: 0.7036; - validate set at epoch 3 Mean loss each batch: 3.8837, Acc: 0.6918;  Time: 342.05450892448425
+Ablation CWE-476  
+Epoch 4   train set at epoch 4 Mean loss each batch: 2.7452, Acc: 0.7083; - validate set at epoch 4 Mean loss each batch: 2.6307, Acc: 0.7012;  Time: 456.6516091823578
+Ablation CWE-476  
+Epoch 5   train set at epoch 5 Mean loss each batch: 1.8683, Acc: 0.7184; - validate set at epoch 5 Mean loss each batch: 2.0454, Acc: 0.7109;  Time: 571.9106304645538
+Ablation CWE-476  
+Epoch 6   train set at epoch 6 Mean loss each batch: 1.4055, Acc: 0.7274; - validate set at epoch 6 Mean loss each batch: 1.6826, Acc: 0.707;  Time: 685.3870446681976
+Ablation CWE-476  
+Epoch 7   train set at epoch 7 Mean loss each batch: 1.0801, Acc: 0.7314; - validate set at epoch 7 Mean loss each batch: 1.333, Acc: 0.7169;  Time: 800.6202018260956
+Ablation CWE-476  
+Epoch 8   train set at epoch 8 Mean loss each batch: 0.9034, Acc: 0.739; - validate set at epoch 8 Mean loss each batch: 1.1368, Acc: 0.7078;  Time: 919.0895283222198
+Ablation CWE-476  
+Epoch 9   train set at epoch 9 Mean loss each batch: 0.7723, Acc: 0.7441; - validate set at epoch 9 Mean loss each batch: 1.061, Acc: 0.7155;  Time: 1036.7776067256927
+Ablation CWE-476  
+Epoch 10   train set at epoch 10 Mean loss each batch: 0.6803, Acc: 0.7541; - validate set at epoch 10 Mean loss each batch: 0.8913, Acc: 0.7305;  Time: 1150.992698431015
+Ablation CWE-476  
+Epoch 11   train set at epoch 11 Mean loss each batch: 0.6202, Acc: 0.758; - validate set at epoch 11 Mean loss each batch: 0.8346, Acc: 0.735;  Time: 1264.9040536880493
+Ablation CWE-476  
+Epoch 12   train set at epoch 12 Mean loss each batch: 0.5807, Acc: 0.7643; - validate set at epoch 12 Mean loss each batch: 0.7905, Acc: 0.7342;  Time: 1379.2608981132507
+Ablation CWE-476  
+Epoch 13   train set at epoch 13 Mean loss each batch: 0.5486, Acc: 0.7749; - validate set at epoch 13 Mean loss each batch: 0.8245, Acc: 0.735;  Time: 1493.6306643486023
+Ablation CWE-476  
+Epoch 14   train set at epoch 14 Mean loss each batch: 0.516, Acc: 0.7807; - validate set at epoch 14 Mean loss each batch: 0.729, Acc: 0.7443;  Time: 1608.4802310466766
+Ablation CWE-476  
+Epoch 15   train set at epoch 15 Mean loss each batch: 0.4928, Acc: 0.7881; - validate set at epoch 15 Mean loss each batch: 0.7409, Acc: 0.7554;  Time: 1723.621038198471
+Ablation CWE-476  
+Epoch 16   train set at epoch 16 Mean loss each batch: 0.4748, Acc: 0.7949; - validate set at epoch 16 Mean loss each batch: 0.7329, Acc: 0.7661;  Time: 1838.0089082717896
+Ablation CWE-476  
+Epoch 17   train set at epoch 17 Mean loss each batch: 0.4518, Acc: 0.8017; - validate set at epoch 17 Mean loss each batch: 0.6681, Acc: 0.7617;  Time: 1952.9110748767853
+Ablation CWE-476  
+Epoch 18   train set at epoch 18 Mean loss each batch: 0.4347, Acc: 0.8093; - validate set at epoch 18 Mean loss each batch: 0.6627, Acc: 0.7706;  Time: 2067.8099281787872
+Ablation CWE-476  
+Epoch 19   train set at epoch 19 Mean loss each batch: 0.4158, Acc: 0.818; - validate set at epoch 19 Mean loss each batch: 0.6629, Acc: 0.7759;  Time: 2183.238925933838
+Ablation CWE-476  
+Epoch 20   train set at epoch 20 Mean loss each batch: 0.4061, Acc: 0.8269; - validate set at epoch 20 Mean loss each batch: 0.6795, Acc: 0.7811;  Time: 2299.394549846649
+Ablation CWE-476  
+Epoch 21   train set at epoch 21 Mean loss each batch: 0.3887, Acc: 0.8335; - validate set at epoch 21 Mean loss each batch: 0.6206, Acc: 0.7911;  Time: 2418.6781446933746
+Ablation CWE-476  
+Epoch 22   train set at epoch 22 Mean loss each batch: 0.3643, Acc: 0.8423; - validate set at epoch 22 Mean loss each batch: 0.628, Acc: 0.7923;  Time: 2537.2292954921722
+Ablation CWE-476  
+Epoch 23   train set at epoch 23 Mean loss each batch: 0.3433, Acc: 0.8528; - validate set at epoch 23 Mean loss each batch: 0.6221, Acc: 0.8046;  Time: 2653.6249334812164
+Ablation CWE-476  
+Epoch 24   train set at epoch 24 Mean loss each batch: 0.3226, Acc: 0.8668; - validate set at epoch 24 Mean loss each batch: 0.5989, Acc: 0.8135;  Time: 2768.872317314148
+Ablation CWE-476  
+Epoch 25   train set at epoch 25 Mean loss each batch: 0.3013, Acc: 0.874; - validate set at epoch 25 Mean loss each batch: 0.5886, Acc: 0.8265;  Time: 2883.5039134025574
+Ablation CWE-476  
+Epoch 26   train set at epoch 26 Mean loss each batch: 0.2823, Acc: 0.8848; - validate set at epoch 26 Mean loss each batch: 0.615, Acc: 0.8309;  Time: 2998.366625547409
+Ablation CWE-476  
+Epoch 27   train set at epoch 27 Mean loss each batch: 0.2667, Acc: 0.8931; - validate set at epoch 27 Mean loss each batch: 0.6046, Acc: 0.8348;  Time: 3113.2638082504272
+Ablation CWE-476  
+Epoch 28   train set at epoch 28 Mean loss each batch: 0.2529, Acc: 0.901; - validate set at epoch 28 Mean loss each batch: 0.6029, Acc: 0.8386;  Time: 3228.407717227936
+Ablation CWE-476  
+Epoch 29   train set at epoch 29 Mean loss each batch: 0.2315, Acc: 0.9099; - validate set at epoch 29 Mean loss each batch: 0.6014, Acc: 0.8443;  Time: 3343.0580534934998
+Ablation CWE-476  
+Epoch 30   train set at epoch 30 Mean loss each batch: 0.2195, Acc: 0.9164; - validate set at epoch 30 Mean loss each batch: 0.6136, Acc: 0.8528;  Time: 3457.2716732025146
+Ablation CWE-476  
+Epoch 31   train set at epoch 31 Mean loss each batch: 0.2055, Acc: 0.923; - validate set at epoch 31 Mean loss each batch: 0.6259, Acc: 0.8516;  Time: 3572.4031295776367
+Ablation CWE-476  
+Epoch 32   train set at epoch 32 Mean loss each batch: 0.1934, Acc: 0.9294; - validate set at epoch 32 Mean loss each batch: 0.6321, Acc: 0.8633;  Time: 3687.3224518299103
+Ablation CWE-476  
+Epoch 33   train set at epoch 33 Mean loss each batch: 0.179, Acc: 0.9348; - validate set at epoch 33 Mean loss each batch: 0.6323, Acc: 0.8674;  Time: 3803.3696627616882
+Ablation CWE-476  
+Epoch 34   train set at epoch 34 Mean loss each batch: 0.1678, Acc: 0.9412; - validate set at epoch 34 Mean loss each batch: 0.6666, Acc: 0.8728;  Time: 3921.1608459949493
+Ablation CWE-476  
+Epoch 35   train set at epoch 35 Mean loss each batch: 0.1584, Acc: 0.9448; - validate set at epoch 35 Mean loss each batch: 0.6665, Acc: 0.8801;  Time: 4040.1758604049683
+Ablation CWE-476  
+Epoch 36   train set at epoch 36 Mean loss each batch: 0.1489, Acc: 0.9504; - validate set at epoch 36 Mean loss each batch: 0.697, Acc: 0.8718;  Time: 4157.98476266861
+Ablation CWE-476  
+Epoch 37   train set at epoch 37 Mean loss each batch: 0.1389, Acc: 0.9512; - validate set at epoch 37 Mean loss each batch: 0.6759, Acc: 0.8846;  Time: 4272.525965929031
+Ablation CWE-476  
+Epoch 38   train set at epoch 38 Mean loss each batch: 0.1317, Acc: 0.9566; - validate set at epoch 38 Mean loss each batch: 0.6571, Acc: 0.885;  Time: 4386.666481256485
+Ablation CWE-476  
+Epoch 39   train set at epoch 39 Mean loss each batch: 0.1239, Acc: 0.959; - validate set at epoch 39 Mean loss each batch: 0.6924, Acc: 0.8874;  Time: 4501.448445320129
+Ablation CWE-476  
+Epoch 40   train set at epoch 40 Mean loss each batch: 0.117, Acc: 0.9635; - validate set at epoch 40 Mean loss each batch: 0.6768, Acc: 0.8915;  Time: 4616.307502508163
+Ablation CWE-476  
+Epoch 41   train set at epoch 41 Mean loss each batch: 0.1114, Acc: 0.9655; - validate set at epoch 41 Mean loss each batch: 0.7182, Acc: 0.8927;  Time: 4731.36276268959
+Ablation CWE-476  
+Epoch 42   train set at epoch 42 Mean loss each batch: 0.1067, Acc: 0.9691; - validate set at epoch 42 Mean loss each batch: 0.7285, Acc: 0.8927;  Time: 4846.080733060837
+Ablation CWE-476  
+Epoch 43   train set at epoch 43 Mean loss each batch: 0.1025, Acc: 0.9694; - validate set at epoch 43 Mean loss each batch: 0.6987, Acc: 0.8953;  Time: 4961.186102628708
+Ablation CWE-476  
+Epoch 44   train set at epoch 44 Mean loss each batch: 0.0988, Acc: 0.9712; - validate set at epoch 44 Mean loss each batch: 0.7844, Acc: 0.8925;  Time: 5075.706265449524
+Ablation CWE-476  
+Epoch 45   train set at epoch 45 Mean loss each batch: 0.0921, Acc: 0.9741; - validate set at epoch 45 Mean loss each batch: 0.7656, Acc: 0.8992;  Time: 5190.68408703804
+Ablation CWE-476  
+Epoch 46   train set at epoch 46 Mean loss each batch: 0.0864, Acc: 0.9757; - validate set at epoch 46 Mean loss each batch: 0.8162, Acc: 0.9018;  Time: 5305.4380621910095
+Ablation CWE-476  
+Epoch 47   train set at epoch 47 Mean loss each batch: 0.0855, Acc: 0.9769; - validate set at epoch 47 Mean loss each batch: 0.8159, Acc: 0.9042;  Time: 5423.5346648693085
+Ablation CWE-476  
+Epoch 48   train set at epoch 48 Mean loss each batch: 0.0822, Acc: 0.979; - validate set at epoch 48 Mean loss each batch: 0.8315, Acc: 0.9014;  Time: 5543.066298484802
+Ablation CWE-476  
+Epoch 49   train set at epoch 49 Mean loss each batch: 0.0826, Acc: 0.9792; - validate set at epoch 49 Mean loss each batch: 0.7911, Acc: 0.9057;  Time: 5662.5669021606445
+Ablation CWE-476  
+Epoch 50   train set at epoch 50 Mean loss each batch: 0.0748, Acc: 0.9812; - validate set at epoch 50 Mean loss each batch: 0.7848, Acc: 0.9008;  Time: 5779.886627197266
+Ablation CWE-476  
+Epoch 51   train set at epoch 51 Mean loss each batch: 0.0701, Acc: 0.9817; - validate set at epoch 51 Mean loss each batch: 0.7472, Acc: 0.9079;  Time: 5894.878344535828
+Ablation CWE-476  
+Epoch 52   train set at epoch 52 Mean loss each batch: 0.0719, Acc: 0.9825; - validate set at epoch 52 Mean loss each batch: 0.8483, Acc: 0.8986;  Time: 6009.751087188721
+Ablation CWE-476  
+Epoch 53   train set at epoch 53 Mean loss each batch: 0.066, Acc: 0.984; - validate set at epoch 53 Mean loss each batch: 0.8899, Acc: 0.903;  Time: 6124.6465220451355
+Ablation CWE-476  
+Epoch 54   train set at epoch 54 Mean loss each batch: 0.0648, Acc: 0.985; - validate set at epoch 54 Mean loss each batch: 0.8695, Acc: 0.9067;  Time: 6240.136458396912
+Ablation CWE-476  
+Epoch 55   train set at epoch 55 Mean loss each batch: 0.0634, Acc: 0.9865; - validate set at epoch 55 Mean loss each batch: 0.9208, Acc: 0.9081;  Time: 6355.6095979213715
+Ablation CWE-476  
+Epoch 56   train set at epoch 56 Mean loss each batch: 0.06, Acc: 0.9862; - validate set at epoch 56 Mean loss each batch: 0.9149, Acc: 0.9;  Time: 6470.328347682953
+Ablation CWE-476  
+Epoch 57   train set at epoch 57 Mean loss each batch: 0.0592, Acc: 0.9882; - validate set at epoch 57 Mean loss each batch: 0.8518, Acc: 0.9095;  Time: 6585.274809598923
+Ablation CWE-476  
+Epoch 58   train set at epoch 58 Mean loss each batch: 0.056, Acc: 0.9868; - validate set at epoch 58 Mean loss each batch: 0.8272, Acc: 0.9052;  Time: 6700.047667980194
+Ablation CWE-476  
+Epoch 59   train set at epoch 59 Mean loss each batch: 0.0523, Acc: 0.9886; - validate set at epoch 59 Mean loss each batch: 0.9235, Acc: 0.9022;  Time: 6815.005373239517
+Ablation CWE-476  
+Epoch 60   train set at epoch 60 Mean loss each batch: 0.0506, Acc: 0.9893; - validate set at epoch 60 Mean loss each batch: 0.9662, Acc: 0.9059;  Time: 6930.253598690033
+Ablation CWE-476  
+Epoch 61   train set at epoch 61 Mean loss each batch: 0.0484, Acc: 0.9896; - validate set at epoch 61 Mean loss each batch: 0.9266, Acc: 0.9057;  Time: 7047.739829540253
+Ablation CWE-476  
+Epoch 62   train set at epoch 62 Mean loss each batch: 0.0484, Acc: 0.9904; - validate set at epoch 62 Mean loss each batch: 0.9623, Acc: 0.9081;  Time: 7167.287051200867
+Ablation CWE-476  
+Epoch 63   train set at epoch 63 Mean loss each batch: 0.0492, Acc: 0.9906; - validate set at epoch 63 Mean loss each batch: 0.9156, Acc: 0.9071;  Time: 7286.806878566742
+Ablation CWE-476  
+Epoch 64   train set at epoch 64 Mean loss each batch: 0.0451, Acc: 0.9913; - validate set at epoch 64 Mean loss each batch: 0.9197, Acc: 0.9142;  Time: 7404.1142456531525
+Ablation CWE-476  
+Epoch 65   train set at epoch 65 Mean loss each batch: 0.044, Acc: 0.9921; - validate set at epoch 65 Mean loss each batch: 0.9225, Acc: 0.9028;  Time: 7519.13143825531
+Ablation CWE-476  
+Epoch 66   train set at epoch 66 Mean loss each batch: 0.0442, Acc: 0.9921; - validate set at epoch 66 Mean loss each batch: 0.9623, Acc: 0.915;  Time: 7633.671986818314
+Ablation CWE-476  
+Epoch 67   train set at epoch 67 Mean loss each batch: 0.0418, Acc: 0.9927; - validate set at epoch 67 Mean loss each batch: 0.9888, Acc: 0.9101;  Time: 7748.568941116333
+Ablation CWE-476  
+Epoch 68   train set at epoch 68 Mean loss each batch: 0.0428, Acc: 0.9917; - validate set at epoch 68 Mean loss each batch: 0.9138, Acc: 0.9101;  Time: 7863.751008272171
+Ablation CWE-476  
+Epoch 69   train set at epoch 69 Mean loss each batch: 0.0407, Acc: 0.9928; - validate set at epoch 69 Mean loss each batch: 0.9238, Acc: 0.9125;  Time: 7978.159440994263
+Ablation CWE-476  
+Epoch 70   train set at epoch 70 Mean loss each batch: 0.0429, Acc: 0.9924; - validate set at epoch 70 Mean loss each batch: 1.0164, Acc: 0.9095;  Time: 8092.987667798996
+Ablation CWE-476  
+Epoch 71   train set at epoch 71 Mean loss each batch: 0.0428, Acc: 0.9932; - validate set at epoch 71 Mean loss each batch: 0.9921, Acc: 0.9087;  Time: 8207.853041410446
+Ablation CWE-476  
+Epoch 72   train set at epoch 72 Mean loss each batch: 0.0465, Acc: 0.9928; - validate set at epoch 72 Mean loss each batch: 0.9513, Acc: 0.9105;  Time: 8322.195699453354
+Ablation CWE-476  
+Epoch 73   train set at epoch 73 Mean loss each batch: 0.0514, Acc: 0.994; - validate set at epoch 73 Mean loss each batch: 1.0572, Acc: 0.9079;  Time: 8437.172912836075
+Ablation CWE-476  
+Epoch 74   train set at epoch 74 Mean loss each batch: 0.0429, Acc: 0.9944; - validate set at epoch 74 Mean loss each batch: 0.9993, Acc: 0.9139;  Time: 8551.60222196579
+Ablation CWE-476  
+Epoch 75   train set at epoch 75 Mean loss each batch: 0.0416, Acc: 0.9936; - validate set at epoch 75 Mean loss each batch: 0.9895, Acc: 0.9065;  Time: 8667.095903158188
+Ablation CWE-476  
+Epoch 76   train set at epoch 76 Mean loss each batch: 0.0407, Acc: 0.9941; - validate set at epoch 76 Mean loss each batch: 1.0835, Acc: 0.9142;  Time: 8785.837027072906
+Ablation CWE-476  
+Epoch 77   train set at epoch 77 Mean loss each batch: 0.0426, Acc: 0.9942; - validate set at epoch 77 Mean loss each batch: 1.0694, Acc: 0.9107;  Time: 8902.36858034134
+Ablation CWE-476  
+Epoch 78   train set at epoch 78 Mean loss each batch: 0.0434, Acc: 0.9931; - validate set at epoch 78 Mean loss each batch: 1.1159, Acc: 0.9142;  Time: 9017.790984869003
+Ablation CWE-476  
+Epoch 79   train set at epoch 79 Mean loss each batch: 0.0377, Acc: 0.9948; - validate set at epoch 79 Mean loss each batch: 1.086, Acc: 0.9154;  Time: 9131.41714143753
+Ablation CWE-476  
+Epoch 80   train set at epoch 80 Mean loss each batch: 0.0381, Acc: 0.9951; - validate set at epoch 80 Mean loss each batch: 1.1035, Acc: 0.914;  Time: 9244.782660007477
+Ablation CWE-476  
+Epoch 81   train set at epoch 81 Mean loss each batch: 0.0375, Acc: 0.9955; - validate set at epoch 81 Mean loss each batch: 1.1171, Acc: 0.9137;  Time: 9358.871633052826
+Ablation CWE-476  
+Epoch 82   train set at epoch 82 Mean loss each batch: 0.0363, Acc: 0.9958; - validate set at epoch 82 Mean loss each batch: 1.1717, Acc: 0.9154;  Time: 9473.482050418854
+Ablation CWE-476  
+Epoch 83   train set at epoch 83 Mean loss each batch: 0.0373, Acc: 0.9954; - validate set at epoch 83 Mean loss each batch: 1.1961, Acc: 0.9105;  Time: 9588.114550828934
+Ablation CWE-476  
+Epoch 84   train set at epoch 84 Mean loss each batch: 0.0356, Acc: 0.9957; - validate set at epoch 84 Mean loss each batch: 1.0945, Acc: 0.9079;  Time: 9702.625598669052
+Ablation CWE-476  
+Epoch 85   train set at epoch 85 Mean loss each batch: 0.0362, Acc: 0.9959; - validate set at epoch 85 Mean loss each batch: 1.1089, Acc: 0.9158;  Time: 9816.952665090561
+Ablation CWE-476  
+Epoch 86   train set at epoch 86 Mean loss each batch: 0.035, Acc: 0.9957; - validate set at epoch 86 Mean loss each batch: 1.0998, Acc: 0.9133;  Time: 9931.494231462479
+Ablation CWE-476  
+Epoch 87   train set at epoch 87 Mean loss each batch: 0.0348, Acc: 0.9965; - validate set at epoch 87 Mean loss each batch: 1.2139, Acc: 0.9073;  Time: 10047.62553858757
+Ablation CWE-476  
+Epoch 88   train set at epoch 88 Mean loss each batch: 0.0378, Acc: 0.9959; - validate set at epoch 88 Mean loss each batch: 1.1027, Acc: 0.9148;  Time: 10165.974298477173
+Ablation CWE-476  
+Epoch 89   train set at epoch 89 Mean loss each batch: 0.0389, Acc: 0.9955; - validate set at epoch 89 Mean loss each batch: 1.0834, Acc: 0.9148;  Time: 10282.735538721085
+Ablation CWE-476  
+Epoch 90   train set at epoch 90 Mean loss each batch: 0.0389, Acc: 0.9954; - validate set at epoch 90 Mean loss each batch: 1.1057, Acc: 0.9178;  Time: 10396.814190864563
+Ablation CWE-476  
+Epoch 91   train set at epoch 91 Mean loss each batch: 0.0359, Acc: 0.9963; - validate set at epoch 91 Mean loss each batch: 1.1492, Acc: 0.918;  Time: 10510.403215885162
+Ablation CWE-476  
+Epoch 92   train set at epoch 92 Mean loss each batch: 0.034, Acc: 0.9966; - validate set at epoch 92 Mean loss each batch: 1.164, Acc: 0.9129;  Time: 10624.11112332344
+Ablation CWE-476  
+Epoch 93   train set at epoch 93 Mean loss each batch: 0.0366, Acc: 0.996; - validate set at epoch 93 Mean loss each batch: 1.0918, Acc: 0.9196;  Time: 10738.85961484909
+Ablation CWE-476  
+Epoch 94   train set at epoch 94 Mean loss each batch: 0.0349, Acc: 0.9967; - validate set at epoch 94 Mean loss each batch: 1.1204, Acc: 0.9196;  Time: 10853.022544622421
+Ablation CWE-476  
+Epoch 95   train set at epoch 95 Mean loss each batch: 0.0398, Acc: 0.9955; - validate set at epoch 95 Mean loss each batch: 1.0664, Acc: 0.918;  Time: 10967.918922424316
+Ablation CWE-476  
+Epoch 96   train set at epoch 96 Mean loss each batch: 0.034, Acc: 0.9966; - validate set at epoch 96 Mean loss each batch: 1.1643, Acc: 0.9192;  Time: 11082.077888250351
+Ablation CWE-476  
+Epoch 97   train set at epoch 97 Mean loss each batch: 0.0334, Acc: 0.9969; - validate set at epoch 97 Mean loss each batch: 1.1126, Acc: 0.9186;  Time: 11196.609231472015
+Ablation CWE-476  
+Epoch 98   train set at epoch 98 Mean loss each batch: 0.0344, Acc: 0.9966; - validate set at epoch 98 Mean loss each batch: 1.1375, Acc: 0.9196;  Time: 11311.23728132248
+Ablation CWE-476  
+Epoch 99   train set at epoch 99 Mean loss each batch: 0.0303, Acc: 0.9973; - validate set at epoch 99 Mean loss each batch: 1.1367, Acc: 0.9218;  Time: 11427.161350488663
+Ablation CWE-476  
+Epoch 100   train set at epoch 100 Mean loss each batch: 0.0304, Acc: 0.9978; - validate set at epoch 100 Mean loss each batch: 1.1314, Acc: 0.9176;  Time: 11544.277534008026
+evaluate model on test dataset...
+0       1
+1       0
+2       0
+3       0
+4       1
+       ..
+5054    0
+5055    0
+5056    0
+5057    1
+5058    0
+Length: 5059, dtype: int64
+Accuracy 0.9183633129076892
+Precision 0.7397521448999047
+Recall 0.8471615720524017
+F-measure 0.7898218829516539

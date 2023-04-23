@@ -4,6 +4,20 @@ This respository is the source code for the accepted paper [VDoTR: Vulnerability
 ## Abstract of Our Work
 Code vulnerability detection has long been a critical issue due to its potential threat to computer systems. It is imperative to detect source code vulnerabilities in software and remediate them to avoid cyber attacks. To automate detection and reduce labor costs, many deep learning-based methods have been proposed. However, these approaches have been found to be either ineffective in detecting multiple classes of vulnerabilities or limited by treating original source code as a natural language sequence without exploiting the structural information of code. In this paper, we propose VDoTR, a model that leverages a new tensor representation of comprehensive code graphs, including AST, CFG, DFG, and NCS, to detect multiple types of vulnerabilities. Firstly, a tensor structure is introduced to represent the structured information of code, which deeply captures code features. Secondly, a new Circle Gated Graph Neural Network (CircleGGNN) is designed based on tensor for hidden state embedding of nodes. CircleGGNN can perform heterogeneous graph information fusion more directly and effectively. Lastly, a 1-D convolution-based output layer is applied to hidden embedding features for classification. The experimental results demonstrate that the detection performance of VDoTR is superior to other approaches with higher accuracy, precision, recall, and F1-measure on multiple datasets for vulnerability detection. Moreover, we illustrate which code graph contributes the most to the performance of VDoTR and which code graph is more sensitive to represent vulnerability features for different types of vulnerabilities through ablation experiments.
 
+## Reproduce
+
+Note: we have not published our used dataset, please contact wanchuanhao@hust.edu.cn for the binary format of dataset.
+
+### Installation
+Clone this repo into your own machine(better with a GPU), and `cd` the cloned repo dir.
+We highly recommend running the code in a [conda](https://www.anaconda.com/) environment. Use `pip` to install package dependencies in an activated conda environment:
+
+```pip install -r req.txt```
+
+Run the `circle_gated_graph.py`:
+
+```python circle_gated_graph.py```
+
 ## Citation
 @article{FAN2023103247,
 title = {VDoTR: Vulnerability detection based on tensor representation of comprehensive code graphs},

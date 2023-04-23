@@ -1,0 +1,44 @@
+{
+    "Tensor_GGNN_GCN": {
+        "learning_rate" : 2.5e-5,
+        "weight_decay" : 1.3e-6,
+        "loss_lambda" : 1.3e-6,
+        "model": {
+            "gated_graph_conv_args": {
+                "out_channels": 101,
+                "num_layers": 5,
+                "max_node_per_graph": 600,
+                "add_self_loops": false,
+                "aggr" : "add",
+                "bias" : true
+                },
+            "conv_args": {
+                "conv1d_1" : {"in_channels": 600, "out_channels": 50, "kernel_size": 3, "padding" : 1},
+                "conv1d_2" : {"in_channels": 50, "out_channels": 20, "kernel_size": 1, "padding" : 0},
+                "maxpool1d_1" : {"kernel_size" : 3, "stride" : 2},
+                "maxpool1d_2" : {"kernel_size" : 2, "stride" : 2}
+            },
+            "emb_size" : 101
+        }
+    },
+
+    "paths" : {
+        "model" : "data/model/"
+    },
+    "files" : {
+        "model" : "checkpoint.pt"
+    },
+    "embed" : {
+        "nodes_dim" : 600,
+        "word2vec_args": {"size" : 100, "alpha" : 0.01, "window" : 5, "min_count" : 3, "sample" : 1e-5,
+                "workers" : 4, "sg" : 1, "hs" : 0, "negative" : 5
+            }
+    },
+    "process" : {
+        "epochs" : 90,
+        "batch_size" : 32,
+        "patience" : 10,
+        "dataset_ratio" : 0.2,
+        "shuffle" : false
+    }
+}
